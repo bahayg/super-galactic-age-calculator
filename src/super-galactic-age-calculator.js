@@ -1,3 +1,4 @@
+/* eslint-disable */
 export class Age {
   constructor(ageEntered, lifeExpectancy) {
     this.ageEntered = ageEntered;

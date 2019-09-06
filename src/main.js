@@ -7,10 +7,10 @@ import './styles.css';
 $(document).ready(function() {
   $(".form-group").submit(function(event) {
     event.preventDefault();
-
+    
     let inputtedAge = $("#entered-age").val();
     let inputtedLifeExpectancy = $("#life-expectancy").val();
-    let newAge = new Age(inputtedAge, inputtedLifeExpectancy);
+    const newAge = new Age(inputtedAge, inputtedLifeExpectancy);
 
     $("#earth-age").text("You have " + newAge.earthAge() + " more years to live on earth!");
     $("#mercury-age").text("Your age in mercury years and years left to live on mercury are: " + newAge.mercuryAge());
