@@ -1,12 +1,21 @@
 form {
-  text-align: center;
-  color: #00344c;
-  font-family: serif;
+  text-align: left;
   font-size: 24px;
+  color: white;
 }
 
 h1 {
   text-align: center;
   color: #00344c;
   font-family: serif;
+}
+
+body {
+  background-color: #00344c;
+}
+
+#results {
+  color: white;
+  text-align: center;
+  font-size: 28px;
 }

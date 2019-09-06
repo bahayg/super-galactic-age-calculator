@@ -9,11 +9,19 @@
       <h1>Super Galactic Age Calculator</h1>
     </div>
     <form class="form-group" action="index.html" method="post">
-      <label id="age">Please enter your age:</label>
-      <input type="text" name="age" value="">
+      <label id="entered-age">Please enter your age:</label>
+      <input type="text" id="entered-age" value="">
+      <label id="life-expectancy">Please enter the average life expectancy for your demographic:</label>
+      <input type="text" id="life-expectancy" value=""><br>
       <button type="submit" name="button">Submit</button>
     </form>
-    <div id="age"></div>
+    <div id="results">
+      <span id="earth-age"></span><br>
+      <span id="mercury-age"></span><br>
+      <span id="venus-age"></span><br>
+      <span id="mars-age"></span><br>
+      <span id="jupiter-age"></span>
+    </div>
   </div>
 </body>
 </html>

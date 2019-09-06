@@ -1,29 +1,22 @@
-import $ from 'jquery';
 export class Age {
-  constructor(earth, mercury, venus, mars, jupiter) {
-    this.earth = earth,
-    this.mercury = mercury;
-    this.venus = venus;
-    this.mars = mars;
-    this.jupiter = jupiter;
+  constructor(ageEntered, lifeExpectancy) {
+    this.ageEntered = ageEntered;
+    this.lifeExpectancy = lifeExpectancy;
   }
-    let inputtedAge = $("#age").val();
-    let inputtedLifeExpectancy = $("#life-expectancy").val();
-    const calcLeftEarthYears = inputtedLifeExpectancy-inputtedAge;
 
   earthAge() {
-    return calcLeftEarthYears;
+    return this.lifeExpectancy - this.ageEntered;
   }
   mercuryAge() {
-    return (inputtedAge/0.24, (calcLeftEarthYears)/0.24);
+    return [this.ageEntered/0.24, this.earthAge()/0.24];
   }
   venusAge() {
-    return (inputtedAge/0.62, (calcLeftEarthYears)/0.62);
+    return [this.ageEntered/0.62, this.earthAge()/0.62];
   }
   marsAge() {
-    return (inputtedAge/1.88, (calcLeftEarthYears)/1.88);
+    return [this.ageEntered/1.88, this.earthAge()/1.88];
   }
   jupiterAge() {
-    return (inputtedAge/11.86, (calcLeftEarthYears)/11.86);
+    return [this.ageEntered/11.86, this.earthAge()/11.86];
   }
-});
+}
